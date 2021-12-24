@@ -3,17 +3,13 @@
 Prepend `save` to the command whose logs you want to save:
 
 ```shell script
-$ save echo Hello!                                                                                                                        ─╯
-Saving logs in /Users/marcomicera/.logs/2021-12-24/17:52:17__\\\'echo\\\ Hello\\\!\\\'.log
--------------
-Hello!
+save echo hello
 ```
 
-Here's the generated log file:
+Here's the generated log file under `~/.logs/$(date +%F)/`:
 
-```shell script
-$ cat /Users/marcomicera/.logs/2021-12-24/17:52:17__\\\'echo\\\ Hello\\\!\\\'.log                                                         ─╯
-Command:	echo Hello!
+```
+Command:	echo hello
 Date:		Fri Dec 24 17:52:17 CET 2021
 PWD:		/Users/marcomicera/git/save
 Git branch:	* main
@@ -21,5 +17,5 @@ Git branch:	* main
 Command logs:
 -------------
 
-Hello!
+hello
 ```
