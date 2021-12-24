@@ -5,8 +5,7 @@ function save() {
   # Where all logs are stored
   PARENT_LOGS_FOLDER=~/.logs
 
-  # Escaping the command string
-  if [ "${#}" -eq 0 ]; then # if no parameters were provided
+  if [ "${#}" -eq 0 ]; then
     echo "Usage: save [command with flags]"
   else
     # Wrapping around single quotes
