@@ -19,3 +19,9 @@ Command logs:
 
 hello
 ```
+
+To go to today's logs folder, simply run:
+
+```shell script
+today
+```
